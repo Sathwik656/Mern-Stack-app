@@ -29,7 +29,9 @@ const DocumentCard = ({ document, onDelete }) => {
   const navigate = useNavigate();
 
   const handleNavigate = () => {
-    navigate(`/documents/${document._id}`);
+    navigate(`/documents/${document._id}`, {
+      state: { initialTab: 'Chat' }, // ✅ IMPORTANT
+    });
   };
 
   const handleDelete = (e) => {
