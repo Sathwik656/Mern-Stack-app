@@ -49,7 +49,7 @@ const DocumentDetailPage = () => {
     return `${API_BASE_URL}/api/documents/${id}/file`;
   }, [id]);
 
-  const renderContent = () => {
+  {/*const renderContent = () => {
     if (loading) return <Spinner />;
 
     if (!pdfUrl) {
@@ -85,10 +85,10 @@ const DocumentDetailPage = () => {
         />
       </div>
     );
-  };
+  }; */}
 
   const tabs = [
-    { name: 'Content', label: 'Content', content: renderContent() },
+   {/* { name: 'Content', label: 'Content', content: renderContent() }, */},
     { name: 'Chat', label: 'Chat', content: <ChatInterface /> },
     {
       name: 'AI Actions',
