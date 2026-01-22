@@ -6,10 +6,9 @@ import cors from 'cors'
 import path from 'path'
 import { fileURLToPath } from 'url';
 import connectDB from './config/db.js';
-import { error } from 'console';
 import errorHandler from './middleware/errorHandler.js'
 
-import authRoutes from './routes/'
+import authRoutes from './routes/authRoutes.js'
 import documentRoutes from './routes/documentRoutes.js'
 import flashcardRoutes from './routes/flashcardRoutes.js'
 import aiRoutes from './routes/aiRoutes.js'
